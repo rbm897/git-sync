@@ -70,7 +70,7 @@ jobs:
       # We run the github action, even though this is duplicated in `make lint` below.
       # This is because the action gives easier-to-read output than the linter.
       # There is a risk of drift between the two, but this is only linting,
-      # not runtime correctness!
+      # not runtime correctness! Test
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v8
         with:

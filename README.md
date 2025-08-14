@@ -208,6 +208,12 @@ CONTRACT
 
 OPTIONS
 
+    --ca-file <string>, $GITSYNC_CA_FILE
+            The CA certificate file to use for HTTPS connections. If specified, this sets the GIT_SSL_CAINFO environment variable for all git operations, allowing git-sync to trust custom certificate authorities when connecting to HTTPS repositories.
+            Example:
+              --ca-file="/etc/ssl/certs/my-ca.crt"
+
+
     Many options can be specified as either a commandline flag or an environment
     variable, but flags are preferred because a misspelled flag is a fatal
     error while a misspelled environment variable is silently ignored.  Some
